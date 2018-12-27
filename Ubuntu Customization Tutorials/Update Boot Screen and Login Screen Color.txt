@@ -5,10 +5,12 @@ Boot Screen and Ubuntu OS Loading Screen
   4. Gedit into the ubuntu-logo.grub file --> modify R,G,B values (0 to 255) --> save the file
   5. Navigate into the ubuntu-logo folder --> gedit into the ubuntu-logo.script file
   6. Search for "Window.SetBackgroundTopColor" and "Window.SetBackgroundBottomColor" --> set the R,G,B percentages (0 to 1)
+  7. Navigate to /boot/grub/ --> gedit into the grub.cfg file --> search for "background" --> modify the RGB values (0 to 255)
   
 Login Screen
   1. Navigate to /usr/share/gnome-shell/theme/
   2. Gedit into ubuntu.css --> search for "lockDialogGroup" --> mofidy the background color (RRGGBB, hex values)
+  3. Repeat 2. for gnome-shell.css
   
 Lastly, run: sudo update-initramfs -u
   
