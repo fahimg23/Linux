@@ -1,5 +1,0 @@
-Boot Screen and Ubuntu OS Loading Screen
-  1. Open terminal --> log in as root.
-  2. Navigate to /usr/share/plymouth/themes/
-  3. Gedit the default.grub file --> modify R,G,B values (0 to 255) --> save the file.
-  4. 
