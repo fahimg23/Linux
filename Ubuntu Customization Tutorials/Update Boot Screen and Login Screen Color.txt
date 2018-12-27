@@ -11,6 +11,8 @@ Login Screen
   1. Navigate to /usr/share/gnome-shell/theme/
   2. Gedit into ubuntu.css --> search for "lockDialogGroup" --> mofidy the background color (RRGGBB, hex values)
   3. Repeat 2. for gnome-shell.css
-  
-Lastly, run: sudo update-initramfs -u
+
+Run: sudo update-initramfs -u
+Lastly, run: sudo update-grub
+
   
