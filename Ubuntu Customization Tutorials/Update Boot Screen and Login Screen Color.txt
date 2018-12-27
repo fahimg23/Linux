@@ -2,8 +2,9 @@ Boot Screen and Ubuntu OS Loading Screen
   1. Open terminal --> log in as root
   2. Navigate to /usr/share/plymouth/themes/
   3. Gedit into the default.grub file --> modify R,G,B values (0 to 255) --> save the file
-  4. Navigate into the ubuntu-logo folder --> gedit into the ubuntu-logo.script file
-  5. Search for "Window.SetBackgroundTopColor" and "Window.SetBackgroundBottomColor" --> set the R,G,B percentages (0 to 1)
+  4. Gedit into the ubuntu-logo.grub file --> modify R,G,B values (0 to 255) --> save the file
+  5. Navigate into the ubuntu-logo folder --> gedit into the ubuntu-logo.script file
+  6. Search for "Window.SetBackgroundTopColor" and "Window.SetBackgroundBottomColor" --> set the R,G,B percentages (0 to 1)
   
 Login Screen
   1. Navigate to /usr/share/gnome-shell/theme/
