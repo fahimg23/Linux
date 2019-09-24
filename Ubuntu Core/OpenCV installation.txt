@@ -1,0 +1,13 @@
+1. Go to https://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html 
+
+2. May encouter cmake installation failure when installing dependencies
+  - Download source for latest cmake from https://cmake.org/download/ 
+    for Unix/Linux platform, and extract (i.e. tar -zxvf cmake-3.15.3.tar.gz)
+  - Follow instructions on https://cmake.org/install/ (i.e. running the bootstrap script, make, and make install)
+  
+3. After installing the rest of the depedencies, follow the instructions under "Building OpenCV from Source Using CMake"
+    - For the optional parameters, make sure you do "Generate pkg-config info" to be link opencv libraries in your
+      C/C++ applications
+    - Linkage will depend on version installed
+      - i.e. if installing opencv 4.x.x, the compiler flag will be `pkg-config --cflags --libs opencv4' (note the "4",
+        if you installed opencv 2.x.x, then the "4" would be excluded)
