@@ -11,6 +11,11 @@
     - Linkage will depend on version installed
       - i.e. if installing opencv 4.x.x, the compiler flag will be `pkg-config --cflags --libs opencv4' (note the "4",
         if you installed opencv 2.x.x, then the "4" would be excluded)
-    - If installing for python 2.7, you can copy and paste the command below:
+    - If installing for python 2.7, you can copy and paste the command below for configuration:
     
     cmake PYTHON2_EXECUTABLE=/usr/bin/python PYTHON_INCLUDE_DIR=/usr/include/python2.7 PYTHON_INCLUDE_DIR2=/usr/include/x86_64-linux-gnu/python2.7 PYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7 PYTHON2_NUMPY_INCLUDE_DIRS=/usr/lib/python2.7/dist-packages/numpy/core/include/.so -D CMAKE_BUILD_TYPE=Release -D OPENCV_GENERATE_PKGCONFIG=ON -D CMAKE_INSTALL_PREFIX=/usr/local .. 
+
+
+NOTE: On Raspberry Pi 3 B/B+, running make -j7 (as indicated in the installation procedure) may fail (out of memory error)
+in which case the installation can be resumed with a lower number of jobs (i.e. make -j4 worked for me). 
+It is safer to just run make -j$(nproc) from the getgo. 
