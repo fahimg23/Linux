@@ -1,0 +1,12 @@
+There are two ways to add a wifi network:
+
+1. sudo raspi-config
+
+2. Edit the /etc/wpa_supplicant/wpa_supplicant.conf file directly
+  - Follow the format:
+    network={
+      ssid="<Enter network ssid here>"
+      psk="<Enter network password here>"
+    }
+    
+    During boot-up all the networks in this file are checked automatically until a connection succeeds.
